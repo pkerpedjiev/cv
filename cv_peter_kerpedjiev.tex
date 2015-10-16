@@ -1,0 +1,202 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\usepackage[latin1]{inputenc}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\normalsize {\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\resdescription} [1] {}
+\usepackage{hyperref}
+
+
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Peter Kerpedjiev}  & +43 680 401 3012\\
+Pezzlgasse 47/21-22 &  pkerpedjiev@gmail.com \\
+1170 Vienna & \url{http://emptypipes.org/about}\\
+Austria \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\hrule
+\begin{itemize}
+\item
+	\ressubheading{University of Vienna}{Vienna, Austria}{PhD, Student, Bioinformatics}{October 2011 - }
+	\vspace{10pt}
+	
+	\textbf{Tentative Thesis:} \textit{RNA Tertiary Structure Prediction and Visualization}
+\item
+	\ressubheading{University of Copenhagen}{Copenhagen, Denmark}{M.Sc. Bioinformatics}{Sep. 2009 - August 2011}
+	\vspace{10pt}
+	
+	\textbf{Thesis:} \textit{Using Position Specific Scoring Matrices for Short Read Alignment on a Compressed Genome 
+	Index}
+\item
+
+	\ressubheading{University of British Columbia}{Vancouver,
+          Canada}{B.Sc. Computer Science and Biology}{Sep. 2003 -
+          May. 2006}
+
+     
+\end{itemize}
+
+
+\resheading{Skills / Interests}
+\hrule
+\begin{description}\setlength{\itemsep}{-1mm}
+\item[Spoken Languages:] English (native), Bulgarian (fluent), German (working)
+\item[Programming Languages:] C, Python, Javascript, C\#, R, Java
+\item[Databases:] PostgreSQL, Oracle, MS SQL Server
+\item[Bioinformatics:] Short-read alignment, Next Generation Sequencing (NGS), Protein structure prediction, RNA structure prediction, Molecular Modelling
+\end{description}
+
+\resheading{Professional Experience}
+\hrule
+\begin{itemize}
+\item
+	\ressubheading{Bayer Technology Services}{Leverkusen, Germany}{Intern, Systems Biology}{June 2010 - September 2010}
+
+	
+\item
+	\ressubheading{Bioinformatics Center, University of Copenhagen}{Copenhagen, Denmark}{Research Assistant, Short Read Alignment}{February 2010 - June 2010}
+
+\item
+	\ressubheading{McKesson Corporation}{Seattle, WA (USA)}{Software Engineer,
+          Patient Records Group}{June 2006 - July 2009}
+\item
+  \ressubheading{Carnegie Mellon University}{Pittsburgh, PA (USA)}{Programmer, Universal Speech Interface Project}{Summer 2000, Summer 2001}
+\end{itemize}
+
+\resheading{Teaching Experience}
+\hrule
+\begin{itemize}
+\item
+  \ressubheading{Max F. Perutz Laboratories}{Vienna, Austria}{Teaching Assistant,
+    Grundlagen der Bioinformatik}{June 2014, December 2014, April 2015}
+\end{itemize}
+
+\resheading{Other Experience}
+\hrule
+\begin{itemize}
+\item
+  \ressubheading{UBC Bioinformatics Center}{Vancouver, Canada}{Volunteer 
+  Programmer,
+    Atlas Data Warehouse Project}{January 2006 - May 2006}
+
+\end{itemize}
+
+\resheading{Open Source Software}
+\hrule
+\begin{itemize}
+  \item \textbf{forna} {An online tool for displaying the secondary structure of RNA. (\url{http://rna.tbi.univie.ac.at/forna})} 
+   \item \textbf{forgi} {A python library for annotating and manipulating RNA secondary and tertiary structure. (\url{http://www.tbi.univie.ac.at/~pkerp/forgi/})} 
+  \item \textbf{bwa-pssm} {A short read aligner using position-specific scoring matrices to encode the error probabilities for each base. (\url{http://bwa-pssm.binf.ku.dk/})}
+\end{itemize}
+\resheading{Scholarships / Awards}
+\hrule
+\begin{itemize}
+  \item
+  \ressubheading{BioVis Design Contest}{Dublin, Ireland}{Honorable Mention - ``DotStruct - An Improved Dot-Plot''}{July 2015}
+  
+\item
+  \ressubheading{Novo Scholarship 2011}{Copenhagen, Denmark}{Support for Master's Thesis Work}{February 2011 - August 2011}
+
+ \end{itemize}
+\resheading{Publications}
+\hrule
+\begin{itemize}
+   \item
+	Kerpedjiev, P., Hammer S., Hofacker I. (2015). Forna (force-directed RNA): Simple and effective online RNA secondary structure diagrams. \textit{Bioinformatics}, 31(20), 3377-9.
+	
+  \item
+	Kerpedjiev, P., H{\"o}ner zu Siederdissen C., Hofacker I. (2015). Predicting RNA 3D structure using a coarse-grain helix-centered model. \textit{RNA}, 21.6, 1110-1121.
+
+\item
+	Kerpedjiev, P., Frellsen, J., Lindgreen, S., \& Krogh, A. (2014). Adaptable probabilistic mapping of short reads using position specific scoring matrices. \textit{BMC bioinformatics}, 15(1), 100.
+
+\item
+	Jakobsen, T. H., ... \& Bjarnsholt, T. (2013). Complete genome sequence of the cystic fibrosis pathogen Achromobacter xylosoxidans NH44784-1996 complies with important pathogenic phenotypes. \textit{PloS one}, 8(7), e68484.
+  
+\end{itemize}
+
+\resheading{Selected Oral Presentations}
+\hrule
+\begin{itemize}
+  \item
+  \ressubheading{ISMB / ECCB Bioinformatics Open Source SIG}{Dublin, Ireland}{Simple, Shareable, Online RNA Secondary Structure Diagrams}{July 2015}
+  
+  \item
+  \ressubheading{Vienna RNA Community Retreat}{Retz, Austria}{Visualizing Co-Transcriptional Folding}{April 2015}
+ 
+  \item
+  \ressubheading{TBI Winter Seminar}{Bled, Slovenia}{Super Simple Software for Showing Secondary Structure}{February 2015}
+ 
+  \item
+  \ressubheading{Herbstseminar der Bioinformatik}{Doubice, Czech Republic}{RNA Secondary Structure Visualization Using D3.js}{October 2014} 
+   
+ \end{itemize}
+ 
+ \resheading{Selected Posters}
+\hrule
+
+\begin{itemize}
+
+\item
+  \ressubheading{RNA Regulation of the Genome SFB Hearing}{Vienna, Austria}{From 2D to 3D: RNA Structure Prediction}{October 2014}
+
+\item
+  \ressubheading{{\"O}GBMT Meeting}{Vienna, Austria}{RNA in 3D: Sequence to Tertiary Structure Using a Simplified Representation}{September 2014}  
+
+\item
+  \ressubheading{ISMB}{Berlin, Germany}{Adaptable Probabilistic Short Read Alignment Using Position Specific Scoring}{July 2013}  
+    
+ 
+
+  
+
+\end{itemize}
+
+\end{document}
